@@ -1,0 +1,189 @@
+/* Ajustes iniciales, la fuente y los colores a utilizar */
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+    --principal: #0078D6;
+    --oscuro: #221E20;
+    --fondo: #222222;
+    --blanco: #ebebeb;
+}
+
+body{
+    background: linear-gradient(0deg,#a61548 0%, #c1c282 30%, #76d29d 50%, #c9ab47 70%, #af1b05 100%);
+    background: -webkit-linear-gradient(0deg,#a61548 0%, #c1c282 30%, #76d29d 50%, #c9ab47 70%, #af1b05 100%);
+    background: -moz-linear-gradient(0deg,#a61548 0%, #c1c282 30%, #76d29d 50%, #c9ab47 70%, #af1b05 100%);
+}
+
+
+/* Header */
+.contenedor-logo{
+    margin: 30px 0 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logo__img{
+    width: 130px;
+    height: 130px;
+}
+
+.contenedor-subtitulo{
+    margin: 20px;
+}
+
+.contenedor-subtitulo__h2{
+    color: #a61548;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Main - Formulario */
+.contenedor-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-inicio-de-sesion{
+    background-color:var(--oscuro);
+    width: 450px;
+    height: 310px;
+    border-radius: 10px;
+    border: 1px solid #a61548;
+}
+
+.contenedor-formulario__form{
+    display: block;
+    margin: 0 auto;
+}
+
+.item-encabezado{
+    margin: 20px 0 8px 0;
+}
+
+.item-encabezado__label{
+    color: #c1c282;
+    margin: 0 30px;
+}
+
+.item-respuesta{
+    color: var(--blanco);
+    margin: 0 30px;
+}
+
+.item-respuesta__input{
+    padding: 10px;
+    border: 2px solid var(--blanco);
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--oscuro);
+    color: var(--gris1);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.item-respuesta__input:focus{
+    border: 2px solid var(--blanco);
+}
+
+.boton-enviar{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-enviar__input{
+    background-color: var(--verde);
+    border: none;
+    outline: 2px solid var(--verde);
+    color: var(--blanco);
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.boton-enviar__input:focus{
+    outline: 2px solid var(--azul);
+}
+
+.boton-enviar__input:hover{
+    cursor: pointer;
+}
+
+
+/* Main -  Registrar cuenta */
+.contenedor-crear-cuenta{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-texto{
+    margin: 0 5px;
+}
+
+.contenedor-texto__p{
+    margin: 0;
+    color: var(--blanco);
+}
+
+.contenedor-texto__a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.contenedor-texto__a span{
+    color: var(--blanco);
+}
+
+
+/* Footer */
+.caja-copyright{
+    background-color: var(--gris);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.caja-copyright__texto{
+    margin: 0 20px;
+}
+
+.caja-copyright-a{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #221E20;
+}
+
+.caja-copyright-p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #221E20;
+}
+
+.contenedor-logo__img {
+    animation: rotation 6.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+
+@media (max-width: 768px){
+    .caja-copyright{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,112 @@
+/* Ajustes iniciales, la fuente y los colores a utilizar */
+:root{
+    --principal: #0078D6;
+    --oscuro: #221E20;
+    --fondo: #222222;
+    --blanco: #ebebeb;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+body{
+    background: linear-gradient(0deg,#a61548 0%, #c1c282 30%, #76d29d 50%, #c9ab47 70%, #af1b05 100%);
+    background: -webkit-linear-gradient(0deg,#a61548 0%, #c1c282 30%, #76d29d 50%, #c9ab47 70%, #af1b05 100%);
+    background: -moz-linear-gradient(0deg,#a61548 0%, #c1c282 30%, #76d29d 50%, #c9ab47 70%, #af1b05 100%);
+}
+
+
+/* Header */
+.contenedor-logo{
+    margin: 30px 0 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logo__img{
+    width: 130px;
+    height: 130px;
+}
+
+.contenedor-subtitulo{
+    margin: 20px;
+}
+
+.contenedor-subtitulo__h2{
+    color: #a61548;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+/* Section - Terminos y condiciones */
+.contenedor-terminos-y-condiciones{
+    margin: 0 auto;
+    margin: 0 100px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: var(--fondo);
+}
+
+.contenedor-terminos-y-condiciones__h3{
+    margin-top: 20px;
+    color: #c1c282;
+    font-size: 20px;
+}
+
+.contenedor-terminos-y-condiciones__p{
+    color: var(--blanco);
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+/* Footer */
+.caja-copyright{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.caja-copyright__texto{
+    margin: 0 20px;
+}
+
+.caja-copyright-a{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #221E20;
+}
+
+.caja-copyright-p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #221E20;
+}
+
+.contenedor-logo__img {
+    animation: rotation 6.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@media (max-width: 768px){
+    .caja-copyright{
+        flex-direction: column;
+    }
+    .contenedor-terminos-y-condiciones{
+        margin: 0 10px;
+    }
+}
